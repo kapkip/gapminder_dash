@@ -83,7 +83,7 @@ top_20_countries <- gap_07 %>%
   geom_text(aes(label = round(lifeExp, 1)),
             nudge_x = -10,
             color = "white") +
-  labs(y = "Country",
+  labs(y = "",
        x = "Life Exp") +
   theme(legend.position = "none")
 
@@ -134,6 +134,7 @@ gap_map_ggplotly
 
 ```{r title = "Top 20 Countries by Life Expectancy"}
 top_20_countries_ggplotly <- ggplotly(top_20_countries, tooltip = "text")
+top_20_countries_ggplotly
 ```
 
 # DOWNLOAD DATA
